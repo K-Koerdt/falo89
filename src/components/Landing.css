@@ -1,0 +1,16 @@
+.container {
+    text-align: center;
+    background-color: #194D33;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    border: solid;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:red;
+  }
+  
