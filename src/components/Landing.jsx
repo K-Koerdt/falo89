@@ -4,7 +4,7 @@ import "./Landing.css"
 export default function Landing() {
     return (
         <div className="container">
-            <h1>Fabian Lorenz</h1>
+            <h1>Kevin Koerdt</h1>
         </div>
     )
 }
