@@ -4,7 +4,7 @@ import "./Landing.scss"
 export default function Landing() {
     return (
         <div className="container">
-            <nav>Navbar</nav>
+            <nav id="nav">Navbar</nav>
             <div className="container__video">Video</div>
             <div className="container__welcome">Willkommen</div>
             <div className="container__offer">Angebote</div>

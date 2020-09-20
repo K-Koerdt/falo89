@@ -1,33 +1,53 @@
 .container {
-    display: grid;
-    min-height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr; 
-  }
+  display: grid;
+  height: 300vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1fr 1.2fr 1fr 1fr 1fr;
+  grid-template-areas: "nav nav nav nav" "video video video video" "welcome welcome welcome welcome" "offer offer offer offer" "ref ref ref ref" "news news exp exp" "footer footer footer footer";
+  grid-gap: 0.2rem;
+}
 
-  nav {
-    background-color: crimson;
+nav {
+  grid-area: nav;
+  background-color: crimson;
+}
+
+footer {
+  grid-area: footer;
+  background-color: deeppink;
+}
+
+.container {
+  &__video {
+    grid-area: video;
+    background-color: darkturquoise;
   }
-  
+  &__welcome {
+    grid-area: welcome;
+    background-color: greenyellow;
+  }
+  &__offer {
+    grid-area: offer;
+    background-color: olivedrab;
+  }
+  &__references {
+    grid-area: ref;
+    background-color: skyblue;
+  }
+  &__newsletter {
+    grid-area: news;
+    background-color: burlywood;
+  }
+  &__explore {
+    grid-area: exp;
+    background-color: firebrick;
+  }
+}
+
+@media only screen and (max-width: 550px) {
   .container {
-    &__video {
-      background-color: darkturquoise;
-    }
-    &__welcome {
-      background-color: greenyellow;
-    }
-    &__offer {
-      background-color: olivedrab;
-    }
-    &__references {
-      background-color: skyblue;
-    }
-    &__newsletter {
-      background-color: burlywood;
-    }
-    &__explore {
-      background-color: darkseagreen;
-    }
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1fr 1.2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nav" "video" "welcome" "offer" "ref" "news" "exp" "footer";
   }
-
- 
+}
