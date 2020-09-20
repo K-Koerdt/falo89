@@ -1,3 +1,8 @@
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+
 .container {
   display: grid;
   height: 300vh;
@@ -10,37 +15,53 @@
 nav {
   grid-area: nav;
   background-color: crimson;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding)
 }
 
 footer {
   grid-area: footer;
   background-color: deeppink;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding)
 }
 
 .container {
   &__video {
     grid-area: video;
     background-color: darkturquoise;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding)
   }
   &__welcome {
     grid-area: welcome;
     background-color: greenyellow;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding)
   }
   &__offer {
     grid-area: offer;
     background-color: olivedrab;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding)
   }
   &__references {
     grid-area: ref;
     background-color: skyblue;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding)
   }
   &__newsletter {
     grid-area: news;
     background-color: burlywood;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding)
   }
   &__explore {
     grid-area: exp;
     background-color: firebrick;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding)
   }
 }
 
