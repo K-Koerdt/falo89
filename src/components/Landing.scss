@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr; 
+  }
+
+  nav {
+    background-color: crimson;
+  }
+  
+  .container {
+    &__video {
+      background-color: darkturquoise;
+    }
+    &__welcome {
+      background-color: greenyellow;
+    }
+    &__offer {
+      background-color: olivedrab;
+    }
+    &__references {
+      background-color: skyblue;
+    }
+    &__newsletter {
+      background-color: burlywood;
+    }
+    &__explore {
+      background-color: darkseagreen;
+    }
+  }
+
+ 

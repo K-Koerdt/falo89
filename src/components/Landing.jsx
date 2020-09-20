@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Landing.css"
+import "./Landing.scss"
 
 export default function Landing() {
     return (
@@ -11,7 +11,7 @@ export default function Landing() {
             <div className="container__references">Referenzen</div>
             <div className="container__newsletter">Newsletter</div>
             <div className="container__explore">Entdecken</div>
-            <footer></footer>
+            <footer>Footer</footer>
         </div>
     )
 }
