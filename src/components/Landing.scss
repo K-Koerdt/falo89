@@ -63,7 +63,12 @@ iframe {
   }
   &__welcome {
     grid-area: welcome;
-    background-color: greenyellow;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3em;
+    background-color: #413C58;
     border-radius: var(--main-radius);
     padding: var(--main-padding)
   }

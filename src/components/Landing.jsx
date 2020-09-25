@@ -18,7 +18,7 @@ export default function Landing() {
           ></iframe>
         </div>
       </div>
-      <div className="container__welcome">Willkommen</div>
+      <div className="container__welcome"><h1>Willkommen</h1></div>
       <div className="container__offer">Angebote</div>
       <div className="container__references">Referenzen</div>
       <div className="container__newsletter">Newsletter</div>
