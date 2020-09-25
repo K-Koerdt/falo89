@@ -7,14 +7,15 @@
   display: grid;
   height: 300vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 2.5fr 1fr 1.2fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 2.5fr 1fr 1.2fr 1fr 1fr 1fr;
   grid-template-areas: "nav nav nav nav" "video video video video" "welcome welcome welcome welcome" "offer offer offer offer" "ref ref ref ref" "news news exp exp" "footer footer footer footer";
   
 }
 
 nav {
+  color: white;
   grid-area: nav;
-  background-color: crimson;
+  background-color: #413C58;
   border-radius: var(--main-radius);
   padding: var(--main-padding)
 }
@@ -36,14 +37,24 @@ iframe {
     display: flex;
     &__div1{
       width: 50%;
+      display: flex;
+      align-items: center;
+      margin-left: 1em;
+      font-size: 2em;
+      font-weight: 900;
     }
     &__div2{
       width: 50%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-weight: 700;
+      font-size: 1.3em;
     }
   }
   &__video {
     grid-area: video;
-    background-color: darkturquoise;
+    background-color: white;
     border-radius: var(--main-radius);
     padding: var(--main-padding);
     display: flex; 

@@ -6,7 +6,7 @@ export default function Landing() {
     <div className="container">
       <nav id="nav" className="container__nav">
         <div className="container__nav__div1">Falo89</div>
-        <div className="container__nav__div2"><span>Angebot</span><span>Referenzen</span><span>Entdecken</span></div>
+        <div className="container__nav__div2"><span>Angebot</span><span>Referenzen</span><span>Entdecken</span><span>Kontakt</span></div>
       </nav>
       <div className="container__video">
         <div className="container__video__div">
