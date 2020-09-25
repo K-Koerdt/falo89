@@ -1,5 +1,5 @@
 :root {
-  --main-radius: 5px;
+  --main-radius: 0px;
   --main-padding: 5px;
 }
 
@@ -7,9 +7,9 @@
   display: grid;
   height: 300vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.5fr 1fr 1.2fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 2.5fr 1fr 1.2fr 1fr 1fr 1fr;
   grid-template-areas: "nav nav nav nav" "video video video video" "welcome welcome welcome welcome" "offer offer offer offer" "ref ref ref ref" "news news exp exp" "footer footer footer footer";
-  grid-gap: 0.2rem;
+  
 }
 
 nav {
@@ -26,12 +26,29 @@ footer {
   padding: var(--main-padding)
 }
 
+iframe {
+  width: 80vw;
+  height: 80vh;
+}
+
 .container {
+  &__nav {
+    display: flex;
+    &__div1{
+      width: 50%;
+    }
+    &__div2{
+      width: 50%;
+    }
+  }
   &__video {
     grid-area: video;
     background-color: darkturquoise;
     border-radius: var(--main-radius);
-    padding: var(--main-padding)
+    padding: var(--main-padding);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
   }
   &__welcome {
     grid-area: welcome;
