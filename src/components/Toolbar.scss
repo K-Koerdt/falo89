@@ -14,6 +14,7 @@
       justify-content: flex-start;
       width: 40%;
       margin-left: 0.5rem;
+      font-size: 3em;
     }
     &__items {
       display: flex;
@@ -35,6 +36,9 @@
 @media (max-width: 768px) {
   .toolbar__navigation__items {
     display: none;
+  }
+  .toolbar__navigation__logo {
+    margin-right: 40px;
   }
 }
 
