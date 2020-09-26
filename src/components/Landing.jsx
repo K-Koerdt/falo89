@@ -7,7 +7,10 @@ export default function Landing() {
 
   return (
     <div className="container">
-   <nav id="nav" className="container__nav">
+
+      <section className="showcase">
+          
+      <nav id="nav" className="container__nav">
         <div className="container__nav__div1">Logo</div>
         <div className="container__nav__div2">
           <span>Angebot</span>
@@ -16,7 +19,7 @@ export default function Landing() {
           <span>Kontakt</span>
         </div>
       </nav> 
-      <section className="showcase">
+      
         <div className="video-container">
           <video src="./video/Underwater.mp4" autoPlay muted loop></video>
         </div>

@@ -20,12 +20,9 @@ h1 {
 
 nav {
   color: white;
-  grid-area: nav;
-
   border-radius: var(--main-radius);
   padding: var(--main-padding);
-  z-index: 10;
-
+  z-index: 2;
 }
 
 footer {
@@ -39,8 +36,9 @@ footer {
 .showcase {
 	height: 100vh;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
 	text-align:left;
 	color: #fff;
 	padding: 0 20px;
@@ -70,11 +68,11 @@ footer {
 	content: '';
 	z-index: 1;
 	height: 100%;
-	width: 100%;
+	width: 100vw;
 	top: 0;
 	left: 0;
 	background: rgba(0, 0, 0, 0.3);
-	position: absolute;
+  position: absolute;
 }
 
 .content {
@@ -84,13 +82,11 @@ footer {
 
 //Old Container Section
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.4fr 2.5fr 1fr 1.2fr 1fr 1fr 1fr;
-  grid-template-areas: "nav nav nav nav" "video video video video" "welcome welcome welcome welcome" "offer offer offer offer" "ref ref ref ref" "news news exp exp" "footer footer footer footer";
-
   &__nav {
     display: flex;
+    width: 90vw;  
+    padding: 1em 0;
+
     &__div1{
       width: 50%;
       display: flex;
@@ -102,7 +98,7 @@ footer {
     &__div2{
       width: 50%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       font-weight: 400;
       font-size: 1.3em;
@@ -116,9 +112,9 @@ footer {
     display: flex; 
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
     font-size: 3em;
-    background-color: #413C58;
+    background-color: white;
     border-radius: var(--main-radius);
     padding: var(--main-padding)
   }
@@ -149,9 +145,5 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1fr 1.2fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "nav" "video" "welcome" "offer" "ref" "news" "exp" "footer";
-  }
+
 }
