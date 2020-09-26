@@ -1,23 +1,31 @@
 :root {
   --main-radius: 0px;
   --main-padding: 5px;
+  --primary-color: #3a4052;
 }
 
-.container {
-  display: grid;
-  height: 300vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.4fr 2.5fr 1fr 1.2fr 1fr 1fr 1fr;
-  grid-template-areas: "nav nav nav nav" "video video video video" "welcome welcome welcome welcome" "offer offer offer offer" "ref ref ref ref" "news news exp exp" "footer footer footer footer";
-  
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
+
+h1 {
+	font-weight: 300;
+	font-size: 7em;
+	line-height: 1.0;
+	margin-bottom: 15px;
+}
+
 
 nav {
   color: white;
   grid-area: nav;
-  background-color: #413C58;
+
   border-radius: var(--main-radius);
-  padding: var(--main-padding)
+  padding: var(--main-padding);
+  z-index: 10;
+
 }
 
 footer {
@@ -27,12 +35,60 @@ footer {
   padding: var(--main-padding)
 }
 
-iframe {
-  width: 80vw;
-  height: 80vh;
+//Video Section
+.showcase {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align:left;
+	color: #fff;
+	padding: 0 20px;
 }
 
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: var(--primary-color);
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+}
+
+.content {
+	z-index: 2;
+}
+
+
+//Old Container Section
 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 2.5fr 1fr 1.2fr 1fr 1fr 1fr;
+  grid-template-areas: "nav nav nav nav" "video video video video" "welcome welcome welcome welcome" "offer offer offer offer" "ref ref ref ref" "news news exp exp" "footer footer footer footer";
+
   &__nav {
     display: flex;
     &__div1{
@@ -41,26 +97,20 @@ iframe {
       align-items: center;
       margin-left: 1em;
       font-size: 2em;
-      font-weight: 900;
+      font-weight: 600;
     }
     &__div2{
       width: 50%;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      font-weight: 700;
+      font-weight: 400;
       font-size: 1.3em;
     }
   }
-  &__video {
-    grid-area: video;
-    background-color: white;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-  }
+
+
+
   &__welcome {
     grid-area: welcome;
     display: flex; 
@@ -74,7 +124,7 @@ iframe {
   }
   &__offer {
     grid-area: offer;
-    background-color: olivedrab;
+    background-color: white;
     border-radius: var(--main-radius);
     padding: var(--main-padding)
   }
