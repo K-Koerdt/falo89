@@ -1,6 +1,5 @@
 import "./Landing.scss";
 import React from 'react';
-import Toolbar from "./Toolbar"
 
 export default function Landing() {
 
@@ -8,7 +7,7 @@ export default function Landing() {
 
   return (
     <div className="container">
-      <Toolbar></Toolbar>
+    
      
       <section className="showcase"> 
         <div className="video-container">
