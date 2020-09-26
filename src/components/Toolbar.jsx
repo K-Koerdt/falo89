@@ -3,10 +3,12 @@ import './Toolbar.scss'
 import './DrawerToggleButton'
 import DrawerToggleButton from "./DrawerToggleButton";
 
-const Toolbar = (props) => (
+const Toolbar = (props) =>
+(
   <header className="toolbar">
     <nav id="nav" className="toolbar__navigation">
-   
+
+
      <DrawerToggleButton click={props.drawerClickHandler} />
       
       <div className="toolbar__navigation__logo">Logo</div>

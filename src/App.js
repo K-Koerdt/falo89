@@ -9,25 +9,26 @@ function App() {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
   const drawerToggleClickHandler = () => {
-    setSideDrawerOpen((prevState) => {
-      return { sideDrawerOpen: !prevState.sideDrawerOpen };
-    });
+    setSideDrawerOpen(!sideDrawerOpen);
   };
 
-  let sideDrawer;
+  const backdropClickHandler = () => {
+    setSideDrawerOpen(false);
+  };
+
   let backdrop;
+  let sidedrawer;
   if (sideDrawerOpen) {
-    sideDrawer = <SideDrawer />;
-    backdrop = <Backdrop />;
+    backdrop = <Backdrop click={backdropClickHandler} />;
+    sidedrawer = <SideDrawer></SideDrawer>
   }
 
   return (
     <div style={{ height: "100%" }}>
       <Toolbar drawerClickHandler={drawerToggleClickHandler}></Toolbar>
       <Landing></Landing>
-      {sideDrawer}
+      {sidedrawer}
       {backdrop}
-     
     </div>
   );
 }
