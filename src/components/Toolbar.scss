@@ -1,0 +1,36 @@
+
+
+  .toolbar {
+    position: fixed;
+    width: 100%;
+    color: white;
+    z-index: 10;
+    height: 60px;
+    &__navigation {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+      &__logo {
+        display: flex;
+        justify-content: flex-start;
+        width: 40%;
+      }
+      &__items {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        font-size: 2em;
+     
+      }  &__items a {
+        text-decoration: none;
+        color: white,
+      } 
+      &__items a:hover,  
+      &__items a:active
+       {
+     color: rgb(90, 196, 181);
+   
+      }
+    }
+  } 

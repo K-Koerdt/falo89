@@ -1,5 +1,6 @@
 import "./Landing.scss";
 import React from 'react';
+import Toolbar from "./Toolbar"
 
 export default function Landing() {
 
@@ -7,19 +8,9 @@ export default function Landing() {
 
   return (
     <div className="container">
-
-      <section className="showcase">
-          
-      <nav id="nav" className="container__nav">
-        <div className="container__nav__div1">Logo</div>
-        <div className="container__nav__div2">
-          <span>Angebot</span>
-          <span>Referenzen</span>
-          <span>Entdecken</span>
-          <span>Kontakt</span>
-        </div>
-      </nav> 
-      
+      <Toolbar></Toolbar>
+     
+      <section className="showcase"> 
         <div className="video-container">
           <video src="./video/Underwater.mp4" autoPlay muted loop></video>
         </div>
@@ -28,10 +19,8 @@ export default function Landing() {
         
         </div>
       </section>
-      <div className="container__welcome">
-        <h2>Willkommen</h2>
-      </div>
-      <div className="container__offer">Angebote</div>
+      <div className="container__welcome">Willkommen</div>
+      <div className="container__offer"> Angebote</div>
       <div className="container__references">Referenzen</div>
       <div className="container__newsletter">Newsletter</div>   
       <div className="container__newsletter">Entdecken</div>
