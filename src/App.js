@@ -17,17 +17,17 @@ function App() {
   };
 
   let backdrop;
-  let sidedrawer;
+
   if (sideDrawerOpen) {
     backdrop = <Backdrop click={backdropClickHandler} />;
-    sidedrawer = <SideDrawer></SideDrawer>
+
   }
 
   return (
     <div style={{ height: "100%" }}>
       <Toolbar drawerClickHandler={drawerToggleClickHandler}></Toolbar>
       <Landing></Landing>
-      {sidedrawer}
+      <SideDrawer show={sideDrawerOpen}></SideDrawer>
       {backdrop}
     </div>
   );

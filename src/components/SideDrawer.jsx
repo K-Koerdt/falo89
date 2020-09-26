@@ -4,10 +4,12 @@ import "./SideDrawer.scss";
 const SideDrawer = props => {
     
   let drawerClasses = 'side-drawer';
-
+  console.log(props.show)
       
+  if(props.show) {
+        drawerClasses = 'side-drawer open'
+      }
 
-    
   return (
     <nav className={drawerClasses}>
       <ul>
