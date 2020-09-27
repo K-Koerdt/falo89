@@ -11,7 +11,7 @@ export default function Landing() {
      
       <section className="showcase"> 
         <div className="video-container">
-          <video src="./video/Underwater.mp4" autoPlay muted loop></video>
+          <video src="./video/Bokeh.mp4" autoPlay muted loop></video>
         </div>
         <div className="content">
            <h1>Fabian Lorenz</h1>
