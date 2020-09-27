@@ -7,8 +7,6 @@ export default function Landing() {
 
   return (
     <div className="container">
-    
-     
       <section className="showcase"> 
         <div className="video-container">
           <video src="./video/Bokeh.mp4" autoPlay muted loop></video>

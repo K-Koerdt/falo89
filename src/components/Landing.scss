@@ -73,41 +73,6 @@ footer {
 //Old Container Section
 .container {
 
-  &__welcome {
-    grid-area: welcome;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 2em;
-    background-color: white;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
-  }
-  &__offer {
-    grid-area: offer;
-    background-color: white;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
-  }
-  &__references {
-    grid-area: ref;
-    background-color: skyblue;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
-  }
-  &__newsletter {
-    grid-area: news;
-    background-color: burlywood;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
-  }
-  &__explore {
-    grid-area: exp;
-    background-color: firebrick;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
-  }
 }
 
 /* @media only screen and (max-width: 550px) {
