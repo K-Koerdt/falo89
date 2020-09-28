@@ -3,7 +3,7 @@ import "./Offer.scss";
 
 export const Offer = () => {
   return (
-    <div className="container">
+    <div className="container" id="offer">
       <div className="container__h2__div">
         <h2>
           Angebote <span style={{ color: "orange" }}>&</span> Vorführungen
