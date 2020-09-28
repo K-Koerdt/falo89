@@ -70,17 +70,10 @@ footer {
   z-index: 2;
 }
 
-//Old Container Section
-.container {
-
-}
-
-/* @media only screen and (max-width: 550px) {
+@media only screen and (max-width: 550px) {
   .container {
-    &__nav {
-   
-      width: vw;  
-      padding: 1em 0;
-    }}
+    h1 {
+      font-size: 3.5em;
+    }
+  }
 }
- */

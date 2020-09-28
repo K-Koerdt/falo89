@@ -18,7 +18,7 @@ export default function Landing() {
         </div>
       </section>
       <Welcome />
-      <div className="container__offer"> Angebote</div>
+      <div className="container__offer">Angebote</div>
       <div className="container__references">Referenzen</div>
       <div className="container__newsletter">Newsletter</div>   
       <div className="container__newsletter">Entdecken</div>
