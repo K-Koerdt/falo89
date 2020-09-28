@@ -1,11 +1,21 @@
 .container__welcome {
   height: 60vh;
   h1 {
-    padding: 0.5em;
+      letter-spacing: -3px;
   }
+  &__h1__1 {
+    padding: 0 0.2em;
+  }
+  &__h1__2 {
+    padding: 0 0 0 2em;
+  }
+
   p {
-    text-align: center;
+    text-align: left;
+    padding: 0 20%;
+    font-size: 28px;
   }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -19,10 +29,15 @@
     p {
         text-align: left;
         padding: 55px 36px;
+        font-size: 18px;
     }
     &__h1 {
         background:  black;
         color: whitesmoke;
+    }
+    &__h1__2__div {
+        display: flex;
+        justify-content: center;
     }
   }
 }
