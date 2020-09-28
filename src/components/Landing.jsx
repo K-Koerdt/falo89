@@ -4,7 +4,10 @@ import { Welcome } from "./Welcome";
 import { Offer } from "./Offer.jsx";
 import { Footer } from "./Footer.jsx";
 
+
+
 export default function Landing() {
+
   return (
     <div className="container">
       <section className="showcase">
