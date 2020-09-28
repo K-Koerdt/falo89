@@ -1,6 +1,7 @@
 import "./Landing.scss";
 import React from 'react';
 import { Welcome } from "./Welcome";
+import { Offer } from "./Offer.jsx";
 
 export default function Landing() {
 
@@ -18,7 +19,7 @@ export default function Landing() {
         </div>
       </section>
       <Welcome />
-      <div className="container__offer">Angebote</div>
+      <Offer />
       <div className="container__references">Referenzen</div>
       <div className="container__newsletter">Newsletter</div>   
       <div className="container__newsletter">Entdecken</div>

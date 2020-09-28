@@ -1,0 +1,12 @@
+.container {
+    height: 60vh;
+   &__h2__div {
+       display: flex;
+       justify-content: center;
+       padding: 100px;
+       font-size: calc(36px + (4500vw - 29255px)/1545);
+   }
+   h2 {
+    font-weight: 500;
+   }
+}
