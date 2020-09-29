@@ -36,7 +36,7 @@ const Toolbar = (props) => {
           </Link>{" "}
           <Link
             activeClass="active"
-            to="section1"
+            to="references"
             spy={true}
             smooth={true}
             offset={0}
@@ -46,7 +46,7 @@ const Toolbar = (props) => {
           </Link>{" "}
           <Link
             activeClass="active"
-            to="section1"
+            to="explore"
             spy={true}
             smooth={true}
             offset={0}

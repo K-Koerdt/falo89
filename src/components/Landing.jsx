@@ -19,9 +19,9 @@ export default function Landing() {
       <Welcome />
       <Offer />
 
-      <div className="container__references">Referenzen</div>
-      <div className="container__newsletter">Newsletter</div>
-      <div className="container__newsletter">Entdecken</div>
+      <div id="references" className="container__references">Referenzen</div>
+      <div id="news" className="container__newsletter">Newsletter</div>
+      <div id="explore" className="container__newsletter">Entdecken</div>
       <Footer />
     </div>
   );
