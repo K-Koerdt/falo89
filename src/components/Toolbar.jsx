@@ -1,12 +1,28 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Toolbar.scss";
 import "./DrawerToggleButton";
 import DrawerToggleButton from "./DrawerToggleButton";
 import { Link } from "react-scroll";
 
 const Toolbar = (props) => {
+
+  const [navbar, setNavbar] = useState(false)
+
+  const changeBackground = () => {
+   if(window.scrollY >= 887) {
+     setNavbar(true) }
+     else {
+       setNavbar(false)
+     }
+   }
+
+
+  
+
+  window.addEventListener('scroll', changeBackground)
+
   return (
-    <header className="toolbar">
+    <header className={ navbar ? 'toolbar activate' : 'toolbar'}>
       <nav id="nav" className="toolbar__navigation">
         <div className="toolbar__toggle-button">
           <DrawerToggleButton click={props.drawerClickHandler} />

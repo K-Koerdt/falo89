@@ -17,12 +17,12 @@
 .grid-container {
   height: 70vh;
   display: grid;
-  grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr;
+  grid-template-columns: 1.5fr 1fr 0.2fr 1fr 0.2fr 1fr 1.5fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "emp con emp con emp con emp";
   display: flex;
+  grid-gap: 0.5em;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .mobile-text {

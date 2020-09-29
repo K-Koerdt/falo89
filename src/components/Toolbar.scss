@@ -35,6 +35,13 @@
     }
   }
 }
+.toolbar.activate {
+  background-color: white;
+  padding-bottom: 0.75em;
+  a{
+    color: black
+  }
+}
 
 @media (max-width: 768px) {
   .toolbar__navigation__items {
