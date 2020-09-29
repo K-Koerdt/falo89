@@ -19,7 +19,12 @@ export const Offer = () => {
               <p className="image__description">Zaubertricks aus der Nähe</p>
             </div>
           </div>
-          <h3 className="mobile-text">Close Up</h3>
+          <div className="mobile-text">
+          <h3 >Close Up Zauberei</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+          </p>
+          </div>
         </div>
         <div className="whitespace"></div>
         <div className="image-wrapper">
@@ -30,7 +35,12 @@ export const Offer = () => {
               <p className="image__description">Lassen Sie sich verzaubern</p>
             </div>
           </div>
-          <h3 className="mobile-text">Zaubershows</h3>
+          <div className="mobile-text">
+          <h3 >Shows</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+          </p>
+          </div>
         </div>
         <div className="whitespace"></div>
         <div className="image-wrapper">
@@ -41,7 +51,12 @@ export const Offer = () => {
               <p className="image__description">Welt der Täuschungen</p>
             </div>
           </div>
-          <h3 className="mobile-text">Zauberkurse</h3>
+          <div className="mobile-text">
+          <h3 >Zauberkurse</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+          </p>
+          </div>
         </div>
         <div className="whitespace"></div>
       </div>

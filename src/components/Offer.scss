@@ -43,6 +43,7 @@
   }
   &__overlay {
     position: absolute;
+    border-radius: 10px;
     top: 0;
     left: 0;
     height: 100%;
@@ -96,13 +97,15 @@
   }
   .mobile-text {
     display: block;
+    width: 50%;
+    padding: 20px;
 }
   .grid-container {
     padding: 1em 25px;
     height: 150vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 0.1fr 1fr 0.1fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr 0.0fr 1fr 0.0fr 1fr 0.2fr;
     grid-template-areas: "emp con emp con emp con emp";
     grid-gap: 1em;
   }
