@@ -10,8 +10,7 @@ export const Offer = () => {
         </h2>
       </div>
       <div className="grid-container">
-        <div className="whitespace"></div>
-        <div className="image-wrapper">
+        <div className="image-wrapper img1">
           <div className="image">
             <img className="image__img" src="./images/cube.jpg" alt="" />
             <div className="image__overlay image__overlay--blur">
@@ -26,8 +25,8 @@ export const Offer = () => {
           </p>
           </div>
         </div>
-        <div className="whitespace"></div>
-        <div className="image-wrapper">
+
+        <div className="image-wrapper img2">
           <div className="image">
             <img className="image__img" src="./images/card.jpg" alt="" />
             <div className="image__overlay image__overlay--blur">
@@ -42,8 +41,8 @@ export const Offer = () => {
           </p>
           </div>
         </div>
-        <div className="whitespace"></div>
-        <div className="image-wrapper">
+
+        <div className="image-wrapper img3">
           <div className="image">
             <img className="image__img" src="./images/lab.jpg" alt="" />
             <div className="image__overlay image__overlay--blur">
@@ -58,7 +57,7 @@ export const Offer = () => {
           </p>
           </div>
         </div>
-        <div className="whitespace"></div>
+    
       </div>
     </div>
   );

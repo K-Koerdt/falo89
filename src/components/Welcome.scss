@@ -23,7 +23,8 @@ margin: 0 auto;
 
 @media only screen and (max-width: 550px) {
   .container__welcome {
-    width: 101%;
+    width: 100%;
+
     min-height: 20vh;
     h1 {
       font-size: 40px;
@@ -37,8 +38,7 @@ margin: 0 auto;
         font-size: 24px;
     }
     &__h1 {
-        background:  black;
-        color: whitesmoke;
+        color: black;
     }
     &__h1__2__div {
         display: flex;
