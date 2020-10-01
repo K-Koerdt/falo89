@@ -1,5 +1,5 @@
 .container__welcome {
-  height: 60vh;
+  min-height: 60vh;
   width: 60%;
 margin: 0 auto;
   h1 {
@@ -23,6 +23,8 @@ margin: 0 auto;
 
 @media only screen and (max-width: 550px) {
   .container__welcome {
+    width: 101%;
+    min-height: 20vh;
     h1 {
       font-size: 40px;
       padding: 0 0 0 15px;
@@ -32,7 +34,7 @@ margin: 0 auto;
     p {
         text-align: left;
         padding: 55px 36px;
-        font-size: 18px;
+        font-size: 24px;
     }
     &__h1 {
         background:  black;
