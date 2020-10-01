@@ -6,7 +6,7 @@ export const Offer = () => {
     <div className="container" id="offer">
       <div className="container__h2__div">
         <h2>
-          Angebote <span style={{ color: "orange" }}>&</span> Vorführungen
+          Angebote 
         </h2>
       </div>
       <div className="grid-container">

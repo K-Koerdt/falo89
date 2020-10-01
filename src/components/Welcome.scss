@@ -4,15 +4,15 @@
 margin: 0 auto;
   h1 {
       letter-spacing: -3px;
-      font-weight: 500;
+      font-weight: 600;
   }
   &__h1__1 {
-    padding: 0 0.2em;
+    font-size: calc(36px + (7800vw - 29250px)/1545);
   }
   &__h1__2 {
-    padding: 0 0 0 2em;
+    font-size: calc(36px + (7800vw - 29250px)/1545);
+    padding: 0 0 0 1em;
   }
-
   p {
     text-align: left;
     padding: 0 20% ;

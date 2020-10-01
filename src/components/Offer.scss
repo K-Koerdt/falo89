@@ -2,25 +2,26 @@
   min-height: 100vh;
 
   &__h2__div {
-    display: flex;
-    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
     margin-top: 100px;
-    padding: 100px;
-    background-color: rgb(26, 7, 7);
-    color: white;
+    padding: 20px;
+    background-color: white;
+    color: black;
   }
   h2 {
-    font-weight: 500;
-    font-size: 82px;
+    font-weight: 600;
+    font-size: calc(36px + (7800vw - 29250px)/1545);
+    letter-spacing: -3px;
   }
 }
 .grid-container {
   height: 70vh;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 0.2fr 1fr 0.2fr 1fr 1.5fr;
-  grid-template-rows: 1fr;
+  width: 60%;
+  margin: 0 auto;
+
   display: flex;
-  grid-gap: 0.5em;
+  grid-gap: 1.5em;
   align-items: center;
   justify-content: center;
 }
@@ -39,11 +40,10 @@
   &__img {
     display: block;
     width: 100%;
-    border-radius: 10px;
+
   }
   &__overlay {
     position: absolute;
-    border-radius: 10px;
     top: 0;
     left: 0;
     height: 100%;
@@ -86,8 +86,7 @@
 @media only screen and (max-width: 550px) {
   .container {
     &__h2__div {
-      justify-content: flex-start;
-      padding: 50px 0 50px 15px;
+      margin-top: 0;
     }
     h2 {
       font-weight: 600;
@@ -101,13 +100,13 @@
     padding: 20px;
 }
   .grid-container {
-    padding: 1em 25px;
+  
     height: 150vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 0.0fr 1fr 0.0fr 1fr 0.2fr;
+    grid-template-rows: 0.05fr 1fr 0.0fr 1fr 0.0fr 1fr 0.2fr;
     grid-template-areas: "emp con emp con emp con emp";
-    grid-gap: 1em;
+    grid-gap: 2em;
   }
   .image-wrapper{
       display: flex;
