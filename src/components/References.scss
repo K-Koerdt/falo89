@@ -1,5 +1,13 @@
 .ref__container {
     width: 70%;
     margin: 0 auto;
-    min-height: 60vh;
+    min-height: 80vh;
+    &__title {
+        h2 {
+            font-weight: 600;
+            font-size: calc(36px + (7800vw - 29250px)/1545);
+            letter-spacing: -3px;
+            padding: 1.25em 0;
+          }
+    }
 }

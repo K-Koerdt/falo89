@@ -3,8 +3,8 @@ import "./Offer.scss";
 
 export const Offer = () => {
   return (
-    <div className="container" id="offer">
-      <div className="container__h2__div">
+    <div className="offer__container" id="offer">
+      <div className="offer__container__h2__div">
         <h2>
           Angebote 
         </h2>
