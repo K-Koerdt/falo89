@@ -3,6 +3,7 @@ import React from "react";
 import { Welcome } from "./Welcome";
 import { Offer } from "./Offer.jsx";
 import { Footer } from "./Footer.jsx";
+import References from "./References";
 
 export default function Landing() {
 
@@ -18,8 +19,7 @@ export default function Landing() {
       </section>
       <Welcome />
       <Offer />
-
-      <div id="references" className="container__references">Referenzen</div>
+      <References/>
       <div id="news" className="container__newsletter">Newsletter</div>
       <div id="explore" className="container__newsletter">Entdecken</div>
       <Footer />
