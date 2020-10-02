@@ -1,18 +1,41 @@
-import React from 'react'
-import './References.scss'
+import React from "react";
+import "./References.scss";
+import Slider from "./Slider";
 
 export default function References() {
-    return (
-        <div className="ref__container">
-            <div className="ref__container__title">
-                <h2>Referenzen</h2>
-            </div>
-            <div className="ref__container__reftext">
-                
-            </div>
-            <div className="ref__container__video">
+  const referencesList = [
+    { person: "Frank", text: "Amazing Show of Fabian" },
+    { person: "Melanie", text: "Wahnsinn" },
+    { person: "Strasser", text: "Aufregend und Spannend" },
+    { person: "Peter", text: "Kaum zu glauben" },
+  ];
 
+  return (
+    <div className="ref__container">
+      <div className="ref__container__title">
+        <h2>Referenzen</h2>
+      </div>
+      <div className="ref__container__reftext">
+        <Slider
+          options={{
+            /* autoPlay: 4000, */
+            pauseAutoPlayOnHover: true,
+            wrapAround: true,
+            fullscreen: true,
+            adaptiveHeight: true,
+          }}
+        >
+          {referencesList.map((reference, index) => (
+            <div
+              style={{ width: "80%", height: "400px", margin: "0 0.5em" }}
+              key={index}
+            >
+              {reference.text}  
             </div>
-        </div>
-    )
+          ))}
+        </Slider>
+      </div>
+      <div className="ref__container__video"></div>
+    </div>
+  );
 }
