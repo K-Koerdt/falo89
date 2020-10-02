@@ -13,6 +13,7 @@
     font-weight: 600;
     font-size: calc(36px + (7800vw - 29250px)/1545);
     letter-spacing: -3px;
+    padding: 0 0 1.25em 0;
   }
 }
 .grid-container {
@@ -33,10 +34,10 @@
 }
 .img{
   &1{
-    margin-top: 6em;
+    margin-top: 25%;
   }
   &2{
-    margin-top: 3em;
+    margin-top: 10%;
   }
 
 }
@@ -45,12 +46,13 @@
 
 .image {
   position: relative;
-  width: 80%;
+  width: 100%;
 
   &__img {
     display: block;
     width: 100%;
   }
+
   &__overlay {
     position: absolute;
     top: 0;
@@ -82,11 +84,11 @@
     backdrop-filter: blur(5px);
   }
   &__title {
-    font-size: 1.25em;
+    font-size: 2em;
     font-weight: bold;
   }
   &__description {
-    font-size: 1em;
+    font-size: 1.5em;
     margin-top: 0.25em;
   }
 }

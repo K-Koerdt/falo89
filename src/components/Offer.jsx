@@ -42,7 +42,7 @@ export const Offer = () => {
           </div>
         </div>
 
-        <div className="image-wrapper img3">
+    {/*     <div className="image-wrapper img3">
           <div className="image">
             <img className="image__img" src="./images/lab.jpg" alt="" />
             <div className="image__overlay image__overlay--blur">
@@ -56,7 +56,7 @@ export const Offer = () => {
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
           </p>
           </div>
-        </div>
+        </div> */}
     
       </div>
     </div>
