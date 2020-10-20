@@ -30,12 +30,19 @@ export default function References() {
               key={index}
               class="ref__container__reftext__content"
             >
-              {reference.text}  
+              <img src="./images/quotation-mark.svg" alt="quotation_mark"/>
+
+              <div>
+              <h2>{reference.text}</h2>  
+              <p>{reference.person}</p>
+              </div>
+
+              <img src="./images/quotation-right-mark.svg" alt="quotation_mark_right"/>
             </div>
           ))}
         </Slider>
       </div>
-      <div className="ref__container__video"></div>
+  
     </div>
   );
 }
