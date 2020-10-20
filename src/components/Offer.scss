@@ -1,5 +1,5 @@
 .offer__container {
-  min-height: 140vh;
+
 
   &__h2__div {
     width: 70%;
@@ -13,15 +13,15 @@
     font-weight: 600;
     font-size: calc(36px + (7800vw - 29250px)/1545);
     letter-spacing: -3px;
-    padding: 0 0 1.25em 0;
+   /*  padding: 0 0 10% 0; */
   }
 }
 .grid-container {
-  height: 50vh;
+
   width: 70%;
   margin: 0 auto;
   display: flex;
-  grid-gap: 1.5em;
+  grid-gap: 3em;
   align-items: center;
   justify-content: center;
 }
@@ -34,10 +34,10 @@
 }
 .img{
   &1{
-    margin-top: 25%;
+    margin-top: 10%;
   }
   &2{
-    margin-top: 10%;
+    margin-top: 2%;
   }
 
 }
@@ -133,9 +133,7 @@
   }
   .image {
     width: 150px;
-    img {
-      border-radius: 10px;
-    }
+ 
     &__title {
       font-size: 1em;
     }

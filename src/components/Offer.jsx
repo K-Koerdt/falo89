@@ -14,8 +14,8 @@ export const Offer = () => {
           <div className="image">
             <img className="image__img" src="./images/cube.jpg" alt="" />
             <div className="image__overlay image__overlay--blur">
-              <div className="image__title"> Close Up </div>
-              <p className="image__description">Zaubertricks aus der Nähe</p>
+              <div className="image__title"> Zauberkurse </div>
+              <p className="image__description">Welt der Täuschungen</p>
             </div>
           </div>
           <div className="mobile-text">

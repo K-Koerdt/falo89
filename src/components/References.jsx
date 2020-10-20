@@ -12,9 +12,9 @@ export default function References() {
 
   return (
     <div className="ref__container">
-      <div className="ref__container__title">
+  {/*     <div className="ref__container__title">
         <h2>Referenzen</h2>
-      </div>
+      </div> */}
       <div className="ref__container__reftext">
         <Slider
           options={{
@@ -27,8 +27,8 @@ export default function References() {
         >
           {referencesList.map((reference, index) => (
             <div
-              style={{ width: "80%", height: "400px", margin: "0 0.5em" }}
               key={index}
+              class="ref__container__reftext__content"
             >
               {reference.text}  
             </div>

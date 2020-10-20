@@ -1,11 +1,11 @@
 .ref__container {
     width: 70%;
     margin: 0 auto;
-    min-height: 100vh;
+    margin-top: 100px;
     display: grid;
     padding: 1.5em 0;
     grid-template-columns: repeat(10, 10%);
-    grid-template-rows: repeat(10, 10%);
+    grid-template-rows: repeat(5, 10%);
     &__title {
         h2 {
             font-weight: 600;
@@ -15,20 +15,19 @@
     }
     &__reftext {
         grid-column-start: 1;
-        grid-column-end: 6;
-        grid-row-start: 4;
-        grid-row-end: 9;
-        border: solid;
-    }
-    &__video {
-        grid-column-start: 6    ;
         grid-column-end: 11;
-        grid-row-start: 4;
-        grid-row-end: 9;
-        border: solid;
+        grid-row-start: 2;
+        grid-row-end: 5;
+      &__content {
+        height: 150px;
+        background-color: aqua;
+        margin: 0 .5em;
+        width: 80%;
+      }
     }
+
 }
-.gallery {
+/* .gallery {
     background: #EEE;
   }
   
@@ -40,7 +39,7 @@
     counter-increment: gallery-cell;
   }
   
-  /* cell number */
+
   .gallery-cell:before {
     display: block;
     text-align: center;
@@ -48,7 +47,7 @@
     line-height: 200px;
     font-size: 80px;
     color: white;
-  }
+  } */
 
   @media only screen and (max-width: 550px) { 
       .ref__container {
