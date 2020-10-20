@@ -6,7 +6,6 @@ import { Footer } from "./Footer.jsx";
 import References from "./References";
 
 export default function Landing() {
-
   return (
     <div className="container" id="landing">
       <section className="showcase">
@@ -18,10 +17,14 @@ export default function Landing() {
         </div>
       </section>
       <Welcome />
-      <div className="container__offer"><Offer /></div>
-      <References/>
-      <div id="news" className="container__newsletter">Newsletter</div>
-      <div id="explore" className="container__newsletter">Entdecken</div>
+      <div className="container__offer">
+        <Offer />
+      </div>
+      <References />
+
+      <div style={{margin: "4em"}} id="explore" className="container__newsletter">
+        Entdecken
+      </div>
       <Footer />
     </div>
   );
