@@ -27,9 +27,9 @@ export const Footer = () => {
           <button>Abonnieren</button>
         </div>
         <div className="container__footer__newsletter__social">
-            <img src="./images/facebook.svg" alt="facebook"/>
-            <img src="./images/instagram.svg" alt="facebook"/>
-            <img src="./images/email.svg" alt="facebook"/>
+          <img src="./images/facebook.svg" alt="facebook" />
+          <img src="./images/instagram.svg" alt="facebook" />
+          <img src="./images/email.svg" alt="facebook" />
         </div>
       </div>
     </div>
