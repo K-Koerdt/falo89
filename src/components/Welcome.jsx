@@ -23,10 +23,9 @@ export const Welcome = () => {
         </div>
        
         <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum.
+          Mit Hingabe teile ich Zauberkunststücke, die zum Lachen, Wohlfühlen und Bewundern einladen. 
+          Vieles wird verständlich, obwohl "die Magie" dahinter unverständlich bleibt. Die Gäste werden lebhaft mit einbezogen.
+          Das Publikum staunt, während es einzigartig unterhalten wird. Das Event wird unvergesslich, es bleibt eine gemeinsame, schöne Erinnerung.
         </p>
       </div>
     </>

@@ -24,6 +24,7 @@ export const Offer = () => {
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
           </p>
           </div>
+          <a href="">Mehr Infos</a>
         </div>
 
         <div className="image-wrapper img2">
@@ -40,6 +41,7 @@ export const Offer = () => {
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
           </p>
           </div>
+          <a href="">Mehr Infos</a>
         </div>
 
     {/*     <div className="image-wrapper img3">

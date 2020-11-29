@@ -12,6 +12,11 @@
     align-items: center;
     justify-content: space-around;
     height: 100%;
+
+    a {
+      font-size: 22px;
+    }
+
     &__logo {
       display: flex;
       justify-content: flex-start;
