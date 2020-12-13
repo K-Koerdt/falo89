@@ -27,18 +27,7 @@ const Toolbar = (props) => {
         <div className="toolbar__toggle-button">
           <DrawerToggleButton click={props.drawerClickHandler} />
         </div>
-        <div className="toolbar__navigation__logo">
-          <Link
-            activeClass="false"
-            to="landing"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            Logo
-          </Link>
-        </div>
+  
         <div className="toolbar__navigation__items">
           <Link
             activeClass="active"
@@ -48,7 +37,7 @@ const Toolbar = (props) => {
             offset={0}
             duration={500}
           >
-            Angebot
+            Angebote
           </Link>{" "}
           <Link
             activeClass="active"

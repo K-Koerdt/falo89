@@ -10,19 +10,34 @@ export default function Landing() {
     <div className="container" id="landing">
       <section className="showcase">
         <div className="video-container">
-          <video src="./video/Underwater.mp4" autoPlay muted loop></video>
+          <video
+            class="landing__video"
+            src="./video/Underwater.mp4"
+            autoPlay
+            muted
+            loop
+          ></video>
         </div>
+
         <div className="content">
-          <h1>Fabian Lorenz</h1>
+          <div className="upper-part">
+            <Welcome />
+          </div>
+          <div className="lower-part">
+            <h1 class="name__headline">Fabian Lorenz Zauberei</h1>
+          </div>
         </div>
       </section>
-      <Welcome />
       <div className="container__offer">
         <Offer />
       </div>
       <References />
 
-      <div style={{margin: "4em"}} id="explore" className="container__newsletter">
+      <div
+        style={{ margin: "4em" }}
+        id="explore"
+        className="container__newsletter"
+      >
         Entdecken
       </div>
       <Footer />

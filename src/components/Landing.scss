@@ -2,6 +2,10 @@
   --main-radius: 0px;
   --main-padding: 5px;
   --primary-color: #3a4052;
+  position: relative;
+  /* max-width: 1440px; */
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 * {
@@ -9,14 +13,15 @@
   padding: 0;
 }
 
-h1 {
+.name__headline {
   font-weight: 300;
   font-size: 52px;
   line-height: 1;
-  margin-bottom: 15px;
   letter-spacing: -3px;
+  width: 85%;
+  margin: 0 auto;
+  color: black;
 }
-
 
 //Video Section
 .showcase {
@@ -33,11 +38,19 @@ h1 {
 .video-container {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 60%;
   height: 100%;
   overflow: hidden;
   background: var(--primary-color);
+
+  .landing-video {
+    position: relative;
+    object-fit: cover; /* This is the mainly problematic line*/
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .video-container video {
@@ -57,19 +70,33 @@ h1 {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   position: absolute;
 }
 
 .content {
   z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-/* .container {
-  &__offer {
-    padding-bottom: 10em;;
-  }
-} */
+.upper-part {
+  display: flex;
+  align-items: center;
+  height: 50%;
+}
+
+.lower-part {
+  display: flex;
+  align-items: center;
+  height: 50%;
+}
 
 @media only screen and (max-width: 550px) {
   .container {

@@ -1,5 +1,11 @@
 .offer__container {
-
+  position: relative;
+  .offer__text {
+    font-size: 25px;
+    color: black;
+    padding: 35px 35px 0;
+    line-height: 1.5;
+  }
 
   &__h2__div {
     width: 70%;
@@ -11,38 +17,71 @@
   }
   h2 {
     font-weight: 600;
-    font-size: calc(36px + (7800vw - 29250px)/1545);
+    font-size: calc(36px + (7800vw - 29250px) / 1545);
     letter-spacing: -3px;
-   /*  padding: 0 0 10% 0; */
+    color: black;
+  }
+  .offer-flyout {
+    top: 380px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: green;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
   }
 }
-.grid-container {
 
+.zauberkurs-backdrop {
+  display: none;
+}
+.grid-container {
   width: 70%;
   margin: 0 auto;
   display: flex;
   grid-gap: 3em;
   align-items: center;
   justify-content: center;
+  .zauberkurs-checkbox {
+    cursor: pointer;
+  }
+}
+#zauberkurs-checkbox {
+  display: none;
+}
+#zauberkurs-checkbox {
+  &:checked ~ .offer-flyout {
+    transform: translatex(0%);
+    z-index: 102;
+  }
+
+  &:checked ~ .zauberkurs-checkbox > .zauberkurs-backdrop {
+    display: inline;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+  }
 }
 
 .mobile-text {
-    display: none;
+  display: none;
 }
-.whitespace {
-  background: white;
-}
-.img{
-  &1{
+
+.img {
+  &1 {
     margin-top: 10%;
+    filter: contrast(2);
   }
-  &2{
+  &2 {
     margin-top: 2%;
+    filter: contrast(2);
   }
-
 }
-
-
 
 .image {
   position: relative;
@@ -59,7 +98,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
     color: white;
     display: flex;
     flex-direction: column;
@@ -94,14 +133,14 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .img{
-  &1{
-    margin-top: 0;
+  .img {
+    &1 {
+      margin-top: 0;
+    }
+    &2 {
+      margin-top: 0;
+    }
   }
-  &2{
-    margin-top: 0;
-  }
-}
   .offer__container {
     min-height: 100%;
     &__h2__div {
@@ -117,7 +156,7 @@
     display: block;
     width: 50%;
     padding: 20px;
-}
+  }
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -125,13 +164,13 @@
     grid-template-areas: "emp con emp con emp con emp";
     grid-gap: 2em;
   }
-  .image-wrapper{
-      display: flex;
-      justify-content: space-around;
+  .image-wrapper {
+    display: flex;
+    justify-content: space-around;
   }
   .image {
     width: 150px;
- 
+
     &__title {
       font-size: 1em;
     }

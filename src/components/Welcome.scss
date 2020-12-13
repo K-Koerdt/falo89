@@ -1,49 +1,23 @@
 .container__welcome {
-  min-height: 50vh;
-  width: 70%;
-margin: 0 auto;
-color: #003946;
-  h1 {
-      letter-spacing: -3px;
-      font-weight: 600;
-  }
-  &__h1__1 {
-    font-size: calc(22px + (7800vw - 29250px)/1545);
-  }
-  &__h1__2 {
-    font-size: calc(22spx + (7800vw - 29250px)/1545);
-    padding: 0 0 0 1em;
-  }
-  p {
-    text-align: left;
-    padding: 0 10% ;
-    font-size: 20px;
-  }
+  width: 85%;
+  margin: 0 auto;
 
+  .landing__headline {
+    font-weight: 300;
+    font-size: 68px;
+    line-height: 1;
+    letter-spacing: -3px;
+    padding-bottom: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    color: black;
+  }
 }
 
 @media only screen and (max-width: 550px) {
   .container__welcome {
     width: 100%;
-
     min-height: 20vh;
-    h1 {
-      font-size: 40px;
-      padding: 0 0 0 15px;
-      margin: 0;
-     font-weight: 600;
-    }
-    p {
-        text-align: left;
-        padding: 55px 36px;
-        font-size: 24px;
-    }
-    &__h1 {
-        color: black;
-    }
-    &__h1__2__div {
-        display: flex;
-        justify-content: center;
-    }
+
   }
 }

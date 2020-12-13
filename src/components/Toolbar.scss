@@ -2,6 +2,9 @@
   a {
     cursor: pointer;
   }
+
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
   position: fixed;
   width: 100%;
   color: white;
@@ -10,20 +13,13 @@
   &__navigation {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
     height: 100%;
 
     a {
       font-size: 22px;
     }
 
-    &__logo {
-      display: flex;
-      justify-content: flex-start;
-      width: 40%;
-      margin-left: 0.5rem;
-      font-size: 3em;
-    }
     &__items {
       display: flex;
       justify-content: space-around;
@@ -43,8 +39,8 @@
 .toolbar.activate {
   background-color: white;
   padding-bottom: 0.75em;
-  a{
-    color: #003946
+  a {
+    color: #003946;
   }
 }
 
