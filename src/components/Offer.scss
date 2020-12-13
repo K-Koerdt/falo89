@@ -27,9 +27,20 @@
     position: absolute;
     width: 100%;
     height: 500px;
-    background-color: green;
+    background-color: #0e2347;
     transform: translateX(-100%);
     transition: all 0.5s ease-in-out;
+
+    &--content {
+      width: 70%;
+      padding: 35px 0;
+      margin: 0 auto;
+      .offer-flyout__headline {
+        font-size: 32px;
+        color: white;
+        font-size: calc(36px + (7800vw - 29250px) / 1545);
+      }
+    }
   }
 }
 

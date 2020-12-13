@@ -36,7 +36,6 @@ export const Offer = () => {
                 <h3>Close Up Zauberei</h3>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
               </div>
-              <a href="">Mehr Infos</a>
             </div>
           </label>
 
@@ -52,11 +51,14 @@ export const Offer = () => {
               <h3>Shows</h3>
               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
             </div>
-            <a href="">Mehr Infos</a>
           </div>
         </div>
 
-        <div className="offer-flyout">blub</div>
+        <div className="offer-flyout">
+          <div className="offer-flyout--content">
+            <h2 className="offer-flyout__headline">Zauberkurse</h2>
+          </div>
+        </div>
       </div>
     </div>
   );
