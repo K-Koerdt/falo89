@@ -31,7 +31,7 @@ export default function Landing() {
       <div className="container__offer">
         <Offer />
       </div>
-      <References />
+   {/*    <References />
 
       <div
         style={{ margin: "4em" }}
@@ -39,7 +39,7 @@ export default function Landing() {
         className="container__newsletter"
       >
         Entdecken
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

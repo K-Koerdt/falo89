@@ -6,9 +6,14 @@ export const Offer = () => {
     <div className="offer__container" id="offer">
       <div className="offer__basic-view">
         <input type="checkbox" id="zauberkurs-checkbox" />
+        <input type="checkbox" id="zaubershow-checkbox" />
 
         <label for="zauberkurs-checkbox" className="zauberkurs-checkbox">
           <div className="zauberkurs-backdrop"></div>
+        </label>
+
+        <label for="zaubershow-checkbox" className="zaubershow-checkbox">
+          <div className="zaubershow-backdrop"></div>
         </label>
 
         <div className="offer__container__h2__div">
@@ -39,24 +44,33 @@ export const Offer = () => {
             </div>
           </label>
 
-          <div className="image-wrapper img2">
-            <div className="image">
-              <img className="image__img" src="./images/fabi1.jpg" alt="" />
-              <div className="image__overlay image__overlay--blur">
-                <div className="image__title"> Show </div>
-                <p className="image__description">Lassen Sie sich verzaubern</p>
+          <label for="zaubershow-checkbox" className="zaubershow-checkbox">
+            <div className="image-wrapper img2">
+              <div className="image">
+                <img className="image__img" src="./images/fabi1.jpg" alt="" />
+                <div className="image__overlay image__overlay--blur">
+                  <div className="image__title"> Show </div>
+                  <p className="image__description">
+                    Lassen Sie sich verzaubern
+                  </p>
+                </div>
+              </div>
+              <div className="mobile-text">
+                <h3>Shows</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
               </div>
             </div>
-            <div className="mobile-text">
-              <h3>Shows</h3>
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-            </div>
-          </div>
+          </label>
         </div>
 
-        <div className="offer-flyout">
-          <div className="offer-flyout--content">
+        <div className="offer-flyout-zauberkurs">
+          <div className="offer-flyout-zauberkurs--content">
             <h2 className="offer-flyout__headline">Zauberkurse</h2>
+          </div>
+        </div>
+        <div className="offer-flyout-zaubershow">
+          <div className="offer-flyout-zaubershow--content">
+            <h2 className="offer-flyout__headline">Zaubershow</h2>
           </div>
         </div>
       </div>

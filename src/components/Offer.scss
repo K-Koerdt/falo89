@@ -21,7 +21,7 @@
     letter-spacing: -3px;
     color: black;
   }
-  .offer-flyout {
+  .offer-flyout-zauberkurs {
     top: 380px;
     left: 0;
     position: absolute;
@@ -35,6 +35,30 @@
       width: 70%;
       padding: 35px 0;
       margin: 0 auto;
+
+      .offer-flyout__headline {
+        font-size: 32px;
+        color: white;
+        font-size: calc(36px + (7800vw - 29250px) / 1545);
+      }
+    }
+  }
+
+  .offer-flyout-zaubershow {
+    top: 380px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: #0e2347;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+
+    &--content {
+      width: 70%;
+      padding: 35px 0;
+      margin: 0 auto;
+      
       .offer-flyout__headline {
         font-size: 32px;
         color: white;
@@ -48,6 +72,7 @@
   display: none;
 }
 .grid-container {
+  padding: 0 0 100px 0;
   width: 70%;
   margin: 0 auto;
   display: flex;
@@ -62,12 +87,35 @@
   display: none;
 }
 #zauberkurs-checkbox {
-  &:checked ~ .offer-flyout {
+  &:checked ~ .offer-flyout-zauberkurs {
     transform: translatex(0%);
     z-index: 102;
   }
 
   &:checked ~ .zauberkurs-checkbox > .zauberkurs-backdrop {
+    display: inline;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+  }
+
+  }
+
+
+#zaubershow-checkbox {
+  display: none;
+}
+#zaubershow-checkbox {
+  &:checked ~ .offer-flyout-zaubershow {
+    transform: translatex(0%);
+    z-index: 102;
+  }
+
+  &:checked ~ .zaubershow-checkbox > .zaubershow-backdrop {
     display: inline;
     position: fixed;
     width: 100%;

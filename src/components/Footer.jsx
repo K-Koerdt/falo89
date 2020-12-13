@@ -14,7 +14,7 @@ export const Footer = () => {
         <p>Impressum</p>
       </div>
       <div className="container__footer__contact">
-        <h3>Wir sind für sie da</h3>
+        <h3>Ich bin für sie da</h3>
         <p className="container__footer__contact__phone"> 015353857568</p>
         <p className="container__footer__contact__time">
           Montags bis Freitags von 8 bis 18 Uhr
