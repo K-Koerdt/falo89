@@ -71,6 +71,19 @@ export const Offer = () => {
         <div className="offer-flyout-zaubershow">
           <div className="offer-flyout-zaubershow--content">
             <h2 className="offer-flyout__headline">Zaubershow</h2>
+            <div className="offer-flyout__inner-content">
+              <h3 className="subheadline">Buchen Sie eine Zaubershow</h3>
+              <textarea
+                className="input"
+                name=""
+                id=""
+                rows="10"
+                placeholder="Ihre Nachricht"
+              ></textarea>
+              <p className="text">Schicken Sie mir Ihre Buchungsanfrage.</p>
+              <p className="text">Anschließend lasse ich Ihnen ein Angebot zukommen.</p>
+              <button className="zaubershow-button">Absenden</button>
+            </div>
           </div>
         </div>
       </div>

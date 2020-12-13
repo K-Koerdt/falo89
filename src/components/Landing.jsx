@@ -25,7 +25,7 @@ export default function Landing() {
           </div>
           <div className="lower-part">
             <h1 class="name__headline">Fabian Lorenz Zauberei</h1>
-          </div>
+        </div>
         </div>
       </section>
       <div className="container__offer">
