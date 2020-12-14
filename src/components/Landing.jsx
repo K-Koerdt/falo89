@@ -24,14 +24,17 @@ export default function Landing() {
             <Welcome />
           </div>
           <div className="lower-part">
-            <h1 class="name__headline">Fabian Lorenz Zauberei</h1>
-        </div>
+   
+            <h1 className="name__headline">Fabian Lorenz</h1>
+            <img className="name__icon" src="./images/divider.png" alt="" srcset="" />
+            <h1 className="name__headline_bottom">Zauberei</h1>
+          </div>
         </div>
       </section>
       <div className="container__offer">
         <Offer />
       </div>
-   {/*    <References />
+      {/*    <References />
 
       <div
         style={{ margin: "4em" }}

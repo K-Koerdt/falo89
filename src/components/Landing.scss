@@ -18,13 +18,22 @@
   font-size: 52px;
   line-height: 1;
   letter-spacing: -3px;
-  width: 85%;
   margin: 0 auto;
   color: black;
+  &_bottom {
+     font-weight: 300;
+  font-size: 80px;
+  line-height: 1;
+  letter-spacing: -3px;
+  margin: 0 auto;
+  color: black;
+  }
 }
 
 .name__icon {
-  height: 30px;
+  height: 50px;
+  padding: 10px 0;
+
 }
 
 //Video Section
@@ -98,8 +107,11 @@
 
 .lower-part {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 50%;
+  width: 85%;
 }
 
 @media only screen and (max-width: 550px) {
